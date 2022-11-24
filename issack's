@@ -1,0 +1,64 @@
+#incluid<stdio.h>
+
+int main()
+{
+    // variable
+    int coursewirk, written;
+    charn grade;
+    // taking marks 
+    print(" ENTER YOUR COURSEWORK MARKS: ");
+    scanf("%d", &coursework);
+    // chek marks is valid or not
+    // marks is valid if it belongs to 0 - 100
+    
+    if(coursework <0 || coursework >100){
+        printf("INVALID COURSEWORK");
+        // stop execution 
+        return 0;
+    }
+    
+    print("ENTER YOUR WRITTEN EXAM MARKS: ");
+    scanf("%d", &written);
+    
+    if(written  <0 || written >100){
+       print("INVALID WRITTEN");
+       return 0;
+    }
+    
+    printf("coursework marks = %d\n"; coursework);
+    scanf("written exam marks = %d\n", witten);
+    
+    if(coursework >=70 && coursework <= 100)
+    grade = 'A';
+    
+    else if(coursework >= 60)
+         grade = 'B';
+    
+    else if(coursework >= 50)
+         grade = 'C';
+         
+    else if(coursework >= 40)
+         grade = 'D';
+         
+    else if(coursework >= 0)
+         grade = 'F';
+         
+    if(written >= 70 && written <= 100)
+         grade = 'A';
+        
+        else if(written >= 60)
+          grade = 'B';
+         
+         else if(wiritten >= 50)
+          grade = 'C';
+          
+         else if(written >= 40)
+          grade = 'D';
+          
+         else if(witten >= 0)
+          grade = 'F';
+         // display grade 
+    printf("Grade : %c\n", grade);
+    return 0;
+    
+}
